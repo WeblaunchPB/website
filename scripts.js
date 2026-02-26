@@ -31,3 +31,29 @@ document.addEventListener('click', function (event) {
   }
 
 });
+
+const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "thank-you.html";
+      } else {
+        alert("Något gick fel. Försök igen.");
+      }
+    } catch (error) {
+      alert("Kunde inte skicka formuläret.");
+    }
+  });
