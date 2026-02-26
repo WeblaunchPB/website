@@ -1,46 +1,13 @@
-.navbar {
-  background: linear-gradient(135deg, #e6f2fa, #3d7ba5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.top-section {
-  background: #faffff;
-}
-
-.middle-section {
-  background: linear-gradient(135deg, #3d7ba5, #e6f2fa);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 5rem 0;
-}
-
-.bottom-section {
-  background: #faffff;
-  padding: 5rem 0;
-}
-
-.bottom-right {
-  /* kan tas bort */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-.navbar .nav-link {
-    transition: 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-    color: #0d6efd;
-    background-color: rgb(210, 247, 247);
-}
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #2c5f80;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  height: 5rem;
+  height: 6.3vh;
 }
 
-footer p{
+footer p {
   color: white;
   text-align: center;
 }
@@ -62,30 +29,56 @@ h2 {
 
 dt {
   font-size: 1.1rem;
-  color: #6c757d;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 li {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
-  .middle-left,
-  .bottom-left {
-    padding-bottom: 15px;
-  }
-  h1 {
-    font-size: 2rem;
-  }
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #e6f2fa, #3d7ba5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.navbar .nav-link {
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd;
+  background-color: rgb(210, 247, 247);
+}
+
 .navbar-brand-img {
   width: 75px;
 }
+
+/* Sections */
+.top-section {
+  background: #faffff;
+}
+
+.middle-section {
+  background: linear-gradient(135deg, #3d7ba5, #e6f2fa);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 5rem 0;
+}
+
+.bottom-section {
+  background: #faffff;
+  padding: 5rem 0;
+}
+
+.bottom-right {
+  /* kan tas bort */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Hero */
 .hero {
-  height: 100vh;
+  height: 88vh;
   background: linear-gradient(135deg, #e6f2fa, #3d7ba5);
   display: flex;
   align-items: center;
@@ -111,6 +104,7 @@ li {
   color: #0b2a3a;
 }
 
+/* Button */
 .cta-btn {
   display: inline-block;
   width: 170px;
@@ -126,4 +120,18 @@ li {
 
 .cta-btn:hover {
   background-color: rgb(26, 129, 170);
+}
+
+/* Mediaquerys */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .middle-left,
+  .bottom-left {
+    padding-bottom: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
 }
