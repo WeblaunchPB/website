@@ -49,3 +49,12 @@ body {
   font-size: 30px;
   transition: 0.5s;
 }
+@media (max-width: 461px){
+    .accordion .content-container .answer {
+        font-size: 1.1rem;
+}
+    .accordion .content-container.active .answer {
+        height: 130px;
+}
+
+}
