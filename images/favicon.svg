@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c853"/>
+      <stop offset="50%" stop-color="#0288d1"/>
+      <stop offset="100%" stop-color="#1a237e"/>
+    </linearGradient>
+    <linearGradient id="rocketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="thrustGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#69f0ae"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+    <radialGradient id="shinGrad" cx="35%" cy="30%">
+      <stop offset="0%" stop-color="#64b5f6"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Orbit ellipse ring -->
+  <ellipse cx="30" cy="38" rx="24" ry="10" fill="none" stroke="url(#orbitGrad)" stroke-width="3.5" opacity="0.9"/>
+
+  <!-- Thrust/trail -->
+  <path d="M28 42 Q18 40 10 44 Q16 38 28 38 Z" fill="url(#thrustGrad)" opacity="0.85"/>
+
+  <!-- Rocket body -->
+  <g transform="rotate(-40, 34, 28)">
+    <!-- Body -->
+    <ellipse cx="34" cy="30" rx="6" ry="12" fill="url(#shinGrad)"/>
+    <!-- Nose cone -->
+    <ellipse cx="34" cy="19" rx="4" ry="6" fill="#1565c0"/>
+    <path d="M30 21 Q34 10 38 21 Z" fill="#0d47a1"/>
+    <!-- Fins -->
+    <path d="M28 36 L24 44 L30 40 Z" fill="#1565c0"/>
+    <path d="M40 36 L44 44 L38 40 Z" fill="#1565c0"/>
+    <!-- Window -->
+    <circle cx="34" cy="27" r="3" fill="#1a237e" stroke="#64b5f6" stroke-width="1"/>
+    <circle cx="34" cy="27" r="1.5" fill="#90caf9"/>
+    <!-- Exhaust nozzle -->
+    <rect x="31" y="40" width="6" height="4" rx="1" fill="#0a1929"/>
+  </g>
+</svg>
