@@ -1,6 +1,9 @@
+body{
+    height: 100vh;
+}
+
 .accordion {
   /* width: 50%; */
-  background-color: white;
   padding: 30px;
   border-radius: 3px;
 }
@@ -23,7 +26,7 @@
 }
 .accordion .content-container .answer {
   padding-top: 15px;
-  font-size: 22px;
+  font-size: 1.2rem;
   line-height: 1.5;
   width: 100%;
 
@@ -35,7 +38,7 @@
 /* Javascript styling link */
 
 .accordion .content-container.active .answer {
-  height: 150px;
+  height: 100px;
 }
 .accordion .content-container.active .question {
   font-size: 18px;
