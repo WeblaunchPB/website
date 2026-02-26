@@ -23,10 +23,26 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
+.navbar .nav-link {
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd;
+    background-color: rgb(210, 247, 247);
+}
 footer {
-  background: linear-gradient(90deg, #e6f2fa, #3d7ba5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c5f80;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height: 5rem;
+}
+
+footer p{
+  color: white;
+  text-align: center;
 }
 
 img {
@@ -69,11 +85,8 @@ li {
   width: 75px;
 }
 .hero {
-  height: 88vh;
-  background-image: url(/images/heroimg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100vh;
+  background: linear-gradient(135deg, #e6f2fa, #3d7ba5);
   display: flex;
   align-items: center;
   justify-content: center;
