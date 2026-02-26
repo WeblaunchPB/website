@@ -15,3 +15,19 @@ for (let i = 0; i < accordion.length; i++) {
 
   });
 }
+
+document.addEventListener('click', function (event) {
+
+  const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  const isClickInsideNavbar = navbarCollapse.contains(event.target);
+  const isClickOnToggler = navbarToggler.contains(event.target);
+
+  const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+
+  if (!isClickInsideNavbar && !isClickOnToggler && navbarCollapse.classList.contains('show')) {
+    bsCollapse.hide();
+  }
+
+});
